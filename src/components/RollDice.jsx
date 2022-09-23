@@ -34,7 +34,8 @@ class RollDice extends React.Component {
                 < Die diceNum={this.state.secondDice} isAnimate={this.state.isAnimate} />
                 </div>
 
-                <button onClick={this.changeDieNum} className="RollDice-btn">
+                <button  onClick={this.changeDieNum}  disabled={this.state.isAnimate}
+                className={`RollDice-btn ${this.state.isAnimate ? 'animate' : ''}`}>
                     {this.state.isAnimate ? 'Rolling...' : 'Roll Dice'}
                 </button>
 
