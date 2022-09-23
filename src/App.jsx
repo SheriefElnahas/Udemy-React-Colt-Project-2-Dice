@@ -1,13 +1,10 @@
-import './App.css';
-import Die from "./components/Die";
+import RollDice from './components/RollDice';
 
 
 function App() {
   return (
     <div className="App">
-
-      < Die />
-      < Die />
+      <RollDice />
 
     </div>
   )
